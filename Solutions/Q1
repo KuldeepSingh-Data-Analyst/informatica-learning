@@ -1,1 +1,37 @@
+# Sum of Balances for Male and Female Customers
+
+## Objective
+The objective of this Informatica mapping is to calculate the total balance of male and female customers using customer churn datasets.
+
+This mapping demonstrates the use of Informatica transformations such as Joiner, Aggregator, and Expression Transformation to perform ETL operations and generate summarized analytical output.
+
+---
+
+# Source Files
+
+The following CSV files were used as source datasets:
+
+- `Churn_Modelling2.csv`
+- `Churn_Modelling3.csv`
+
+These files contain customer banking details including:
+
+- CustomerId
+- Gender
+- Balance
+- Age
+- Credit Score
+- Geography
+- Active Status
+
+---
+
+# Mapping Flow
+
+```text
+Churn_Modelling2
+        \
+         > Joiner → Aggregator → Expression → Target File
+        /
+Churn_Modelling3
 
